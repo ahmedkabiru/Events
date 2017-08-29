@@ -17,5 +17,11 @@ class Count_model extends  CI_Model
         return $this->db->count_all_results('users');
     }
 
+       function countBookings()
+    {
+        
+        return $this->db->count_all_results('events_bookings');
+    }
+
   
 }

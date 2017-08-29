@@ -20,6 +20,7 @@ class Admin extends CI_Controller {
         $this->data['title']='Dashboard';
         $this->data['countEvent']=$this->Count_model->countEvent();
         $this->data['countUsers']=$this->Count_model->countUsers();
+        $this->data['countBooking']=$this->Count_model->countBookings();
        //$this->data['menus']=$this->get_menus();
         render_admin('admin/dashboard');
     }

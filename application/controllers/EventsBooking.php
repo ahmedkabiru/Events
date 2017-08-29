@@ -19,7 +19,7 @@ class EventsBooking extends CI_Controller
      
      public function index(){
         $this->data['title']="Bookings";
-        $this->data['bookings']= var_dump($this->EventBooking_model->getAllBookings()); die();
+        $this->data['bookings']= $this->EventBooking_model->getAllBookings();
         render_admin('eventsbooking/index');
      }
 
